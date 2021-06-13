@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    
+    <persistence-unit name="xyz" transaction-type="RESOURCE_LOCAL"> 
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>tn.essat.model.ModeleVoiture</class>
+        <class>tn.essat.model.Voiture</class>
+        <class>tn.essat.model.Reservation</class>
+        <class>tn.essat.model.User</class>
+        <class>tn.essat.model.Promotion</class>
+        <class>tn.essat.model.Avis</class>
+        
+        <properties>
+            <property name="javax.persistence.jdbc.password" value="jihen" />
+            <property name="javax.persistence.jdbc.user" value="jihen" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mini_projet" />
+            <property name="eclipselink.logging.level" value="INFO" />
+        </properties>
+    </persistence-unit>
+    
+</persistence>
